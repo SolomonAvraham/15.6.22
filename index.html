@@ -1,38 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>15.6.22</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-
-    <input type="number" id="input_one">
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <input type="number" id="input_one" />
     <button onclick="getNumFromUser()" id="button_one">Send!</button>
-<br>
-<br>
-        <input type="name" id="input_two">
+    <br />
+    <br />
+    <input type="name" id="input_two" />
     <button onclick="getNameFromUser()" id="button_two">Send</button>
     <p id="ptext"></p>
 
-    <br>
-    <br>
-    <input type="number" min="0" id="input_firstValue">
-      <select  id="operator">
-        <option value="+">+</option>
-        <option value="-">-</option>
-        <option value="/">/</option>
-        <option value="*">*</option>
+    <br />
+    <br />
+    <input type="number" min="0" id="input_firstValue" />
+    <select id="operator">
+      <option value="+">+</option>
+      <option value="-">-</option>
+      <option value="/">/</option>
+      <option value="*">*</option>
     </select>
-    <input type="number" min="0" id="input_secondValue">
-    <button onclick="getNumbersFromUserAndCalc()" id="button_three">Calcalate</button>
+    <input type="number" min="0" id="input_secondValue" />
+    <button onclick="getNumbersFromUserAndCalc()" id="button_three">
+      Calcalate
+    </button>
     <p id="ptextTwo"></p>
 
+    <br />
+    <br />
 
+    <input type="color" id="colorInput" />
+    <select id="sizeInput">
+      <option value="s">S</option>
+      <option value="m">M</option>
+      <option value="l">L</option>
+      <option value="xl">XL</option>
+    </select>
+    <input type="text" id="textInput" placeholder="text" />
+    <button id="button_four" onclick="makeText()">push</button>
+    <p id="ptextThree"></p>
 
+    <br />
+    <br />
+
+    <input type="color" id="colorInputTwo" />
+    <select id="diraction">
+      <option value="top-right">top-right</option>
+      <option value="top-left">top-left</option>
+      <option value="bottom-right">bottom-right</option>
+      <option value="bottom-left">bottom-left</option>
+    </select>
+    <button onclick=" makeColorAndPlace()" id="button_five">PICK</button>
+    <div id="divFour"> </div>
 
     <script src="main.js"></script>
-</body>
+  </body>
 </html>

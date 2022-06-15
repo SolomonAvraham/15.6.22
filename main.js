@@ -45,3 +45,54 @@ function getNumbersFromUserAndCalc() {
       break;
   }
 }
+
+function makeText() {
+  switch (sizeInput.value) {
+    case "s":
+      ptextThree.innerHTML = textInput.value;
+      ptextThree.style = "font-size:x-small; color:" + colorInput.value + ";";
+      textInput.value = "";
+      break;
+
+    case "m":
+      ptextThree.innerHTML = textInput.value;
+      ptextThree.style = "font-size: medium; color:" + colorInput.value + ";";
+      textInput.value = "";
+      break;
+    case "l":
+      ptextThree.innerHTML = textInput.value;
+      ptextThree.style = "font-size: large; color:" + colorInput.value + ";";
+      textInput.value = "";
+      break;
+    case "xl":
+      ptextThree.innerHTML = textInput.value;
+      ptextThree.style = "font-size: x-large; color:" + colorInput.value + ";";
+      textInput.value = "";
+      break;
+  }
+}
+
+function makeColorAndPlace() {
+  switch (diraction.value) {
+    case "top-right":
+      divFour.style =
+        "top:0;right: 0;border-radius:50%;width:200px;height:200px;background-Color:" +
+        colorInputTwo.value +
+        ";";
+    case "top-left":
+      divFour.style =
+        "top:0;left: 0;border-radius:50%;width:200px;height:200px;background-Color:" +
+        colorInputTwo.value +
+        ";";
+    case "bottom-right":
+      divFour.style =
+        "bottom:0;right: 0;border-radius:50%;width:200px;height:200px;background-Color:" +
+        colorInputTwo.value +
+        ";";
+    case "bottom-left":
+      divFour.style =
+        "bottom:0;left: 0;border-radius:50%;width:200px;height:200px;background-Color:" +
+        colorInputTwo.value +
+        ";";
+  }
+}
